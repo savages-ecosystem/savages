@@ -1,27 +1,35 @@
-import React from "react";
-import Slide1 from "../img/slide1.jpg";
+import React, { useState } from "react";
+import Slide from "./Slide";
 
 const Hero = () => {
+	const [slideIndex, setSlideIndex] = useState(1);
+	const slideInfo = [
+		{ url: "../img/slide1.jpg" },
+		{ url: "../img/slide2.jpg" },
+		{ url: "../img/slide3.jpg" },
+		{ url: "../img/slide4.jpg" },
+	];
+
+	const handleSlide = (index) => {
+		setSlideIndex(index);
+	};
 	return (
 		<section className="my-16">
-			<div className="m-auto w-10/12 h-[30rem] flex flex-col justify-evenly items-center p-10 leading-loose bg-slide1 bg-no-repeat bg-cover bg-bottom rounded-xl overflow-hidden text-white">
-				<div className="text-left w-10/12">
-					<h2 className="text-3xl font-bold">SAVAGES</h2>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque,
-						reiciendis.
-					</p>
-				</div>
-				<div className="text-right w-6/12 self-end">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Necessitatibus vel ullam perferendis nisi voluptas error earum
-						recusandae ducimus, voluptates eius laboriosam voluptate animi!
-						Corrupti voluptates, molestias delectus facilis quibusdam quisquam
-						optio veniam vero facere.
-					</p>
-				</div>
-			</div>
+			<Slide slideInfo={slideInfo[slideIndex]} />
+			<ul className="flex justify-center gap-10">
+				{slideInfo.map((slide, index) => {
+					return (
+						<ul
+							key={index}
+							onClick={() => {
+								handleSlide(index);
+							}}
+						>
+							0
+						</ul>
+					);
+				})}
+			</ul>
 		</section>
 	);
 };
