@@ -53,7 +53,7 @@ const Testimonial = () => {
 					{Testimonials.map((testimonial, index) => {
 						return (
 							<Card
-								classList="flex mx-6 min-h-[13rem] gap-3 p-2 w-[20rem] items-center max-w-[20rem] [&>*]:w-1/2 [&>img]:h-10/12 my-3"
+								classList="flex mx-6 min-h-[13rem] gap-3 w-[20rem] items-center max-w-[20rem] [&>*]:w-1/2 [&>img]:h-10/12 my-3"
 								key={index}
 								articleProperty={testimonial}
 							/>

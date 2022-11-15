@@ -17,7 +17,7 @@ const card = ({ articleProperty, classList }) => {
 					<img
 						src={articleProperty.img}
 						alt=""
-						className="rounded-xl h-56 w-full object-cover"
+						className="rounded-l-xl h-56 w-full object-cover"
 					/>
 					<p className="text-center leading-relaxed my-3 p-3">
 						{articleProperty.content.substring(0, 75)}...

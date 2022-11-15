@@ -40,7 +40,7 @@ const Articles = () => {
 	];
 
 	const mediumData = MediumData.dataMedium.map((data, index) => {
-		return { img: data.image, content: data.description, link: data.link };
+		return { img: data.image, content: data.title, link: data.link };
 	});
 
 	console.log(MediumData.dataMedium);

@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import SavagesLogo from "../img/LOGO_SAVAGES.png";
+import { Link } from "react-router-dom";
+import useScrollPosition from "../hooks/useScrollPosition";
 
-const Navbar = () => {
-	const [visibility, setVisibility] = useState(false);
+const Navbar = ({ handleScroll }) => {
+	const scrollValue = useScrollPosition();
+	console.log(scrollValue);
 
-	const handleDropdown = (e) => {
-		e.preventDefault();
-		console.log("Dropdown", visibility);
-		setVisibility((prev) => !prev);
-	};
 	return (
-		<nav className="h-16 navbar flex justify-between items-center px-10 text-white sticky top-0 z-10">
-			<a href="/">
+		<nav
+			className={
+				scrollValue > 0
+					? "navbar navbar-scroll debug"
+					: "navbar navbar-noscroll"
+			}
+		>
+			<Link to={"/"}>
 				<img src={SavagesLogo} alt="Savages Logo" className="w-[10rem]" />
-			</a>
+			</Link>
 			<div>
 				<input
 					type="text"
@@ -24,7 +28,7 @@ const Navbar = () => {
 					autoComplete="off"
 				/>
 			</div>
-			<ul className="flex gap-16 cursor-pointer [&>li:hover]:bg-emerald-300 [&>li]:py-5 [&>li]:px-5 [&>li]:self-center [&>li>a]:rounded-full h-full justify-items-center ">
+			<ul className="flex gap-16 cursor-pointer [&>li:hover]:bg-emerald-300 [&>li]:py-5 [&>li]:px-5 [&>li]:self-center h-full justify-items-center ">
 				<li className="relative group []">
 					<a>Movement</a>
 					<ul className="absolute bg-emerald-300 w-44 [&>li]:p-4 [&>li]:bg-emerald-400 [&>li:hover]:bg-emerald-300 -left-[0rem] top-[4rem] hidden group-hover:block">
@@ -35,7 +39,7 @@ const Navbar = () => {
 					</ul>
 				</li>
 				<li>
-					<a href="#">Product</a>
+					<Link to="/products">Products</Link>
 				</li>
 			</ul>
 			<a href="#" className="hover:bg-emerald-300 py-2 px-4 rounded-full">

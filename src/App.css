@@ -12,8 +12,37 @@
 }
 
 .navbar{
+  display: flex;
+  z-index: 10;
+  color: #fff !important;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center; 
+  position: sticky;
+  padding: 0 2.5rem;
+  top: 0;
+  /* animation: navbarScroll 2s linear 100ms forwards; */
+}
+
+.navbar-noscroll{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgb(236 253 245) 15%, rgba(52,211,153,1) 100%);
+  transition: 0.4s background-image linear;
+}
+
+.navbar-scroll{
   background: rgb(255,255,255);
   background: linear-gradient(90deg, rgb(236 253 245) 15%, rgba(52,211,153,1) 25%);
+  transition: 0.4s background-image linear;
+}
+
+@keyframes navbarScroll {
+  0% {background: linear-gradient(90deg, rgb(236 253 245) 15%, rgba(52,211,153,1) 100%);}
+  /* 0% {background: linear-gradient(90deg, rgb(236 253 245) 15%, rgba(52,211,153,1) 75%);}
+  25% {background: linear-gradient(90deg, rgb(236 253 245) 15%, rgba(52,211,153,1) 60%);}
+  50% {background: linear-gradient(90deg, rgb(236 253 245) 15%, rgba(52,211,153,1) 50%);}
+  75% {background: linear-gradient(90deg, rgb(236 253 245) 15%, rgba(52,211,153,1) 40%);} */
+  100% {background: linear-gradient(90deg, rgb(236 253 245) 15%, rgba(52,211,153,1) 25%);}
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import Articles from "../components/Articles";
 import Partner from "../components/Partner";
 import Testimonial from "../components/Testimonial";
-import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 
 const Home = () => {
@@ -14,7 +13,6 @@ const Home = () => {
 			<Articles />
 			<Partner />
 			<Testimonial />
-			<Footer />
 		</div>
 	);
 };
