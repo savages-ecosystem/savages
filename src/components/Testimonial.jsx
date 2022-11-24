@@ -35,11 +35,10 @@ const Testimonial = () => {
 		dots: true,
 		infinite: true,
 		speed: 1500,
-		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		arrows: true,
 		className: "",
-		// centerPadding: "10px",
 		autoplay: true,
 		autoplaySpeed: 5000,
 	};
@@ -48,12 +47,12 @@ const Testimonial = () => {
 			<h3 className="text-3xl font-semibold py-8 border-t-2 border-emerald-100 w-10/12 m-auto">
 				Testimonials
 			</h3>
-			<div className=" m-auto w-10/12 gap-10 px-16">
+			<div className=" m-auto sm:w-full w-10/12 gap-10 px-16">
 				<Slider {...SliderSettings}>
 					{Testimonials.map((testimonial, index) => {
 						return (
 							<Card
-								classList="flex mx-6 min-h-[13rem] gap-3 w-[20rem] items-center max-w-[20rem] [&>*]:w-1/2 [&>img]:h-10/12 my-3"
+								classList="flex mx-6 min-h-[13rem] gap-3 sm:w-[20rem] w-[30rem] items-center max-w-[30rem] [&>*]:w-1/2 [&>img]:h-10/12 my-3"
 								key={index}
 								articleProperty={testimonial}
 							/>

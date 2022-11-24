@@ -7,7 +7,7 @@ const Partner = () => {
 			<h3 className="text-3xl font-semibold   py-8 border-t-2 border-emerald-100 w-10/12 m-auto">
 				Support Partnership
 			</h3>
-			<ul className="flex justify-center gap-20 [&>li>img]:h-[5rem] ">
+			<ul className="flex justify-center sm:flex-wrap gap-20 [&>li>img]:h-[5rem]">
 				<li>
 					<img src={image.logo_unhas} alt="logo1" />
 				</li>

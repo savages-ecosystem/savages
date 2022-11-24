@@ -29,13 +29,6 @@ const Hero = () => {
 				body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore atque velit quidem, omnis enim placeat excepturi earum praesentium culpa debitis, totam voluptatum ipsam aut, tenetur sapiente laborum laboriosam repellendus quas!",
 			},
 		},
-		{
-			url: "../img/slide4.jpg",
-			content: {
-				heading: "Slide 4",
-				body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore atque velit quidem, omnis enim placeat excepturi earum praesentium culpa debitis, totam voluptatum ipsam aut, tenetur sapiente laborum laboriosam repellendus quas!",
-			},
-		},
 	];
 
 	const sliderSettings = {
@@ -49,8 +42,8 @@ const Hero = () => {
 		autoplaySpeed: 3000,
 	};
 	return (
-		<section className="p-20">
-			<Slider {...sliderSettings}>
+		<section className="pt-16 pb-32 sm:pt-10">
+			<Slider {...sliderSettings} className="m-auto">
 				{slideInfo.map((slide, index) => {
 					return <Slide slideInfo={slide} key={index} />;
 				})}

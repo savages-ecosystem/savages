@@ -8,17 +8,11 @@ const Navbar = ({ handleScroll }) => {
 	console.log(scrollValue);
 
 	return (
-		<nav
-			className={
-				scrollValue > 0
-					? "navbar navbar-scroll debug"
-					: "navbar navbar-noscroll"
-			}
-		>
+		<nav className="navbar navbar-scroll">
 			<Link to={"/"}>
 				<img src={SavagesLogo} alt="Savages Logo" className="w-[10rem]" />
 			</Link>
-			<div>
+			{/* <div>
 				<input
 					type="text"
 					name="search"
@@ -27,22 +21,23 @@ const Navbar = ({ handleScroll }) => {
 					className="rounded-full p-2 px-5 w-80 min-w-16 text-black ring-2 ring-emerald-600"
 					autoComplete="off"
 				/>
-			</div>
-			<ul className="flex gap-16 cursor-pointer [&>li:hover]:bg-emerald-300 [&>li]:py-5 [&>li]:px-5 [&>li]:self-center h-full justify-items-center ">
-				<li className="relative group []">
-					<a>Movement</a>
-					<ul className="absolute bg-emerald-300 w-44 [&>li]:p-4 [&>li]:bg-emerald-400 [&>li:hover]:bg-emerald-300 -left-[0rem] top-[4rem] hidden group-hover:block">
-						<li>Dropdown 12345</li>
-						<li>Dropdown 2</li>
-						<li>Dropdown 3</li>
-						<li>Dropdown 4</li>
-					</ul>
+			</div> */}
+			<ul className="flex gap-16 cursor-pointer [&li>*]:bg-emerald-600  [&>li]:py-5 [&>li]:px-5 [&>li]:self-center h-full justify-items-center ">
+				<li className="relative group">
+					<Link to="movements" className=" px-3 py-2">
+						Movements
+					</Link>
 				</li>
 				<li>
-					<Link to="/products">Products</Link>
+					<Link to="/products" className=" px-3 py-2">
+						Products
+					</Link>
 				</li>
 			</ul>
-			<a href="#" className="hover:bg-emerald-300 py-2 px-4 rounded-full">
+			<a
+				href="#"
+				className="bg-emerald-600 rounded-full px-3 py-2 hover:shadow-inner hover:shadow-black/20 shadow-black/20"
+			>
 				<h2>Join Community!</h2>
 			</a>
 		</nav>

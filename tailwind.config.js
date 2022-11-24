@@ -2,10 +2,16 @@
 module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
-		backgroundImage: {
-			slide1: "url('./img/slide1.jpg')",
-			navbarImage:
-				"linear-gradient(to left , emerald-400, rgba('#28b485',0.8)))",
+		screens: {
+			"2xl": { max: "1535px" },
+
+			xl: { max: "1279px" },
+
+			lg: { max: "1023px" },
+
+			md: { max: "767px" },
+
+			sm: { max: "639px" },
 		},
 		extend: {
 			keyframes: {
@@ -21,5 +27,4 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
 };
