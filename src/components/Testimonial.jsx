@@ -35,7 +35,7 @@ const Testimonial = () => {
 			<h3 className="text-3xl font-semibold py-8 border-t-2 border-emerald-100 w-10/12 m-auto">
 				Testimonials
 			</h3>
-			<div className=" m-auto sm:w-full w-10/12 gap-10 px-16">
+			<div className="m-auto sm:w-full w-10/12 gap-10 sm:p-0 px-16">
 				<Slider {...SliderSettings}>
 					{Testimonials.map((testimonial, index) => {
 						return (

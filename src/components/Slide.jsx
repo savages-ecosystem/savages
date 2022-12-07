@@ -19,9 +19,9 @@ const Slide = ({ slideInfo }) => {
 						<p>{slideInfo?.content?.description || ""}</p>
 					</div>
 					<div className="text-justify w-full sm:text-justify self-end">
-						{slideInfo?.content?.body.map((content) => {
+						{slideInfo?.content?.body.map((content, index) => {
 							return (
-								<div className="mb-3">
+								<div key={index} className="mb-3">
 									<p>{content}</p>
 								</div>
 							);
