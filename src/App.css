@@ -21,7 +21,6 @@
   position: sticky;
   padding: 0 2.5rem;
   top: 0;
-  /* animation: navbarScroll 2s linear 100ms forwards; */
 }
 
 .navbar-noscroll{

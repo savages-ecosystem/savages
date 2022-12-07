@@ -1,7 +1,6 @@
 import React from "react";
 
 const Movement = ({ data }) => {
-	console.log(data);
 	return (
 		<div className="text-left flex flex-col leading-relaxed border-b-2 border-emerald-800 mb-10 overflow-hidden ">
 			<img

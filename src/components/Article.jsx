@@ -10,10 +10,10 @@ const Article = ({ articleProperty, classList = "" }) => {
 			<img
 				src={articleProperty.img}
 				alt=""
-				className="rounded-t-xl h-48 w-full object-cover"
+				className="rounded-t-xl h-48 sm:h-80 w-full object-cover"
 			/>
 			<p className="text-justify leading-relaxed my-3 p-3">
-				{articleProperty.content.substring(0, 115)}{" "}
+				{articleProperty.content}
 			</p>
 			<div className="absolute w-full bottom-5">
 				<a

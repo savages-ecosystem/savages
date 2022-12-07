@@ -11,22 +11,27 @@ const Hero = () => {
 			content: {
 				heading: "Savages",
 				description:
-					"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, vero.",
-				body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ea ullam eius quo dolorum sed ut voluptas, necessitatibus labore iure.",
+					"SAVAGES (Sustainable Village Management System) of CASSAVA : Sistem Pintar Tata Kelola Ubi Kayu dalam Memaksimalkan Produksi Pangan Berkelanjutan menuju Desa dengan Ekonomi Digital",
+				body: [],
 			},
 		},
 		{
 			url: "../img/slide2.jpg",
 			content: {
-				heading: "Slide 2",
-				body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore atque velit quidem, omnis enim placeat excepturi earum praesentium culpa debitis, totam voluptatum ipsam aut, tenetur sapiente laborum laboriosam repellendus quas!",
+				heading: "Tahukah kamu?",
+				body: [
+					"Sebagai Negara hijau agraris, Indonesia dengan potensi sumber daya alam yang melimpah  memegang peran penting dan strategis dalam perekonomian nasional. Salah satu sumber daya alam yang melimpah di Indonesia adalah Ubi Kayu yang menjadi komoditas prospektif.",
+					"Tumbuh dari akar, ubi kayu mengakar dianekaragamkan pengolahan produksinya tentunya dapat memaksimalkan ketahanan pangan dan ekonomi berkelanjutan",
+				],
 			},
 		},
 		{
 			url: "../img/slide3.jpg",
 			content: {
-				heading: "Slide 3",
-				body: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore atque velit quidem, omnis enim placeat excepturi earum praesentium culpa debitis, totam voluptatum ipsam aut, tenetur sapiente laborum laboriosam repellendus quas!",
+				heading: "Kabar Ketahanan Pangan di Indonesia",
+				body: [
+					"Turunnya indeks ketahanan pangan yang melemah menjadi 59,2 pada tahun 2021 menempatkan Indonesia berada di peringkat ke-69 terbelakang dari 113 negara (databooks, 2022). Ketahanan pangan tentunya tidak lepas dari sifat produksi komoditi pangan. Kondisi ini tentunya merupakan sebuah peringatan pentingnya kita memaksimalkan produksi komoditi pangan tersebut. Oleh karena itu, dengan melakukan pengelolaan yang baik melalui SAVAGES dapat menjadi sebuah langkah kontribusi dalam ketahanan pangan di Indonesia.",
+				],
 			},
 		},
 	];
